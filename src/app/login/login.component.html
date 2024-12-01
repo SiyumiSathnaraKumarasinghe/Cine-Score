@@ -1,0 +1,27 @@
+<div class="login-container">
+    <img class="film" src = "assets\images\film.png" alt="image">
+    <div class = "logo">Cine Scope</div>
+    <div class = "description">
+        Welcome to Your Ultimate Movie Review Hub<br>
+        Experience cinema like never before with CineScope! Rate, review, 
+        and discover movies with a vibrant community of film enthusiasts. 
+        From blockbusters to hidden gems, find curated recommendations and share 
+        your thoughts on your favorite films. CineScope celebrates every movie 
+        moment!<br>
+        join the adventure today...
+    </div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">Username</label>
+            <input type="text" name="uname" class="form-control" [(ngModel)]="username"/>
+        </div>
+        <div class="form-group">
+            <label for="pword">Password</label>
+            <input type="password" name="pword" class="form-control" [(ngModel)]="password"/>
+        </div>
+        <div class="btn-container">
+            <div class = "error">{{ errorMsg }}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+    </div>
+</div>
